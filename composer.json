@@ -1,0 +1,29 @@
+{
+    "name": "nybbl/byte",
+    "description": "API Library for integrating with the BYTE API (v1)",
+    "type": "library",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zf",
+        "zendframework",
+        "authentication"
+    ],
+    "authors": [
+        {
+            "name": "Nic Davies",
+            "email": "byte@nybbl.io"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "php-curl-class/php-curl-class": "^4.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nybbl\\Byte\\": ["src/"]
+        }
+    }
+}
