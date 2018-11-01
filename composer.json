@@ -19,7 +19,7 @@
         "php": ">=7.0",
         "ext-curl": "*",
         "ext-json": "*",
-        "php-curl-class/php-curl-class": "^4.6"
+        "php-curl-class/php-curl-class": "^8.2"
     },
     "autoload": {
         "psr-4": {
