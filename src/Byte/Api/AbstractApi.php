@@ -113,7 +113,7 @@ abstract class AbstractApi
         switch (strtolower($method)) {
             case 'get':
                 if (!empty($data)) {
-                    $this->getCurlClient()->get($endpoint. '?' . http_build_query($data));
+                    $this->getCurlClient()->get($endpoint. '&' . http_build_query($data));
                 } else {
                     $this->getCurlClient()->get($endpoint);
                 }
@@ -170,7 +170,10 @@ abstract class AbstractApi
      */
     private function buildUrl(string $endpoint): string
     {
-        return $this->apiUrl . $endpoint;
+        $url = $this->apiUrl . $endpoint;
+        $token = '?token=' . $this->accessToken;
+
+        return $url . $token;
     }
 
     # --------------------------------------------------------------------
