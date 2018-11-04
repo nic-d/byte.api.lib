@@ -3,8 +3,6 @@ PHP BYTE API Client
 
 A simple wrapper for the BYTE API that requires PHP >= 7.0.
 
-Uses [Trello API v1](https://trello.com/docs/index.html). The object API is very similar to the RESTful API.
-
 ## Requirements
 
 * PHP >= 7.0 with [cURL](http://php.net/manual/en/book.curl.php) extension,
