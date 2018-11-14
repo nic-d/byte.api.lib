@@ -22,4 +22,13 @@ class Product extends AbstractApi
     {
         return $this->get(sprintf('/product/%s', $id));
     }
+
+    /**
+     * @param string $id
+     * @return mixed
+     */
+    public function changelog(string $id)
+    {
+        return $this->get(sprintf('/product/%s/changelog', $id));
+    }
 }
