@@ -20,7 +20,7 @@ class Version extends AbstractApi
      */
     public function latest(string $id)
     {
-        return $this->get(sprintf('products/%s/version/latest', $id));
+        return $this->get(sprintf('/products/%s/version/latest', $id));
     }
 
     /**
@@ -30,7 +30,7 @@ class Version extends AbstractApi
      */
     public function version(string $id, string $versionId)
     {
-        return $this->get(sprintf('products/%s/versions/%s', $id, $versionId));
+        return $this->get(sprintf('/products/%s/versions/%s', $id, $versionId));
     }
 
     /**
@@ -42,7 +42,7 @@ class Version extends AbstractApi
     public function compare(string $id, string $versionId, string $compareId)
     {
         return $this->get(sprintf(
-            'products/%s/versions/%s/compare/%s',
+            '/products/%s/versions/%s/compare/%s',
             $id,
             $versionId,
             $compareId
