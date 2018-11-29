@@ -19,7 +19,7 @@ class Product extends AbstractApi
      */
     public function products()
     {
-        return $this->get('/product');
+        return $this->get('/products');
     }
 
     /**
@@ -28,7 +28,7 @@ class Product extends AbstractApi
      */
     public function product(string $id)
     {
-        return $this->get(sprintf('/product/%s', $id));
+        return $this->get(sprintf('/products/%s', $id));
     }
 
     /**
@@ -37,6 +37,6 @@ class Product extends AbstractApi
      */
     public function changelog(string $id)
     {
-        return $this->get(sprintf('/product/%s/changelog', $id));
+        return $this->get(sprintf('/products/%s/changelog', $id));
     }
 }
