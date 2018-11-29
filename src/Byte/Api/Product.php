@@ -15,6 +15,14 @@ namespace Nybbl\Byte\Api;
 class Product extends AbstractApi
 {
     /**
+     * @return mixed
+     */
+    public function products()
+    {
+        return $this->get('/product');
+    }
+
+    /**
      * @param string $id
      * @return mixed
      */
